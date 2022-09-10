@@ -11,6 +11,7 @@ button {
   font-family: Yekan;
   border: none;
   cursor: pointer;
+  height: 40px;
 }
 
 .navbar {
@@ -111,4 +112,59 @@ button {
   position: absolute;
   top: 80px;
   left: 60px;
+}
+
+.pardaakht {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  margin-top: 80px;
+}
+
+.pardaakht-img {
+  background: url('./images/pg.svg');
+  background-size: contain;
+  width: 45%;
+  height: 490px;
+}
+
+.pardaakht-text {
+  width: 45%;
+  margin-top: 40px;
+  margin-right: 120px;
+}
+
+.pardaakht-text h5 {
+  opacity: .6;
+  font-size: 1.2rem;
+}
+
+.pardaakht-text h3 {
+  font-size: 2rem;
+  margin-top: -30px;
+}
+
+.pardaakht-text p {
+  margin-top: -10px;
+}
+
+.pardaakht hr {
+  opacity: .3;
+}
+
+.pardaakht .buttons button {
+  margin-top: 40px;
+  margin-left: 5px;
+  border-radius: 15px;
+}
+
+.buttons .dargah{
+  width: 130px;
+  background-color: rgb(234, 205, 37);
+}
+
+.buttons .more {
+  width: 90px;
+  background-color: rgba(196, 220, 242, 0.621);
+  color: rgb(21, 72, 118);
 }
