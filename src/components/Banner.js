@@ -1,7 +1,11 @@
 import React from 'react'
 
+import home from '../images/home.svg'
+import arrowDown from '../images/down-arrow-svgrepo-com.svg'
+
 const Banner = () => {
   return (
+    <main>
     <div className='banner'>
         <div className='banner-text'>
             <h2>بیش از ۱۲ سال</h2>
@@ -16,10 +20,16 @@ const Banner = () => {
             </div>
         </div>
         <div className='banner-img'>
-
+            <img src={home} alt='home' />
         </div>
-
     </div>
+    <div className='go-down'>
+      <div>
+
+      </div>
+      <img src={arrowDown} alt='arrowDown' />
+    </div>
+    </main>
   )
 }
 

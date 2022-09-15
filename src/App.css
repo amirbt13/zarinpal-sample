@@ -29,28 +29,25 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 1170px;
+  margin: auto;
+  padding: 2px 0 7px;
+  background-color: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(20px);
   position: sticky;
   top: 0;
-  background-color: rgba(255, 255, 255, 0.718);
-  backdrop-filter: blur(20px);
-  z-index: 1001;
-  padding: 0 10px;
-  margin: auto 50px;
-  transition: all 0.3s ease-in;
-  /* position: fixed; */
+  transition: all 0.3s ease;
 }
 
 .navbar .title {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  cursor: pointer;
-  font-size: x-large;
+  margin: 11px 28px;
 }
 
 .logo {
+  display: flex;
+  justify-content: center;
   width: 125px;
-  height: 125px;
+  height: 30px;
   margin-left: 8px;
 }
 
@@ -124,8 +121,8 @@ a {
 .cross-icon {
   text-align: left;
   padding: 15px;
-  margin-top: 40px;
-  margin-left: 10px;
+  margin-top: 3px;
+  margin-left: 3px;
 }
 .burger-more-items {
   padding: 10px 30px;
@@ -213,6 +210,7 @@ a {
   width: 135px;
   list-style-type: none;
   border-top: 5px solid rgb(220, 209, 95);
+  background-color: #fff;
   border-radius: 20px;
   box-shadow: 1px 1px 8px rgb(229, 229, 229);
   padding: 20px 10px; 
@@ -236,43 +234,140 @@ a {
 /* Banner */
 
 .banner {
-  width: 1050px;
+  width: 1170px;
   padding: 124px 60px 80px;
   background-image: linear-gradient(135deg, #21254e, #2b4a83);
+  border-radius: 20px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.banner-text h2 {
+  font-size: 2rem;
+  color: #fff
+}
+
+.banner-text p {
+  color: #fff;
+  font-size: 1.15rem;
+  margin: 25px 0px;
+  line-height: 2.5rem;
+}
+
+.banner .banner-img img {
+  width: 500px
+}
+
+.banner-buttons {
+  margin-top: 60px;
+}
+.banner-buttons > .register-btn {
+   font-size: 1rem;
+   color: #000;
+   background-color: #ffd900;
+   padding: 6px 14px;
+   border-radius:  10px;
+   margin-left: 10px ;
+}
+
+.banner-buttons > .login-btn {
+  font-size: 1rem;
+  color: #fff;
+  background-color: #435a8a;
+  padding: 6px 14px;
+  border-radius: 10px;
+}
+
+.go-down {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: 58px;
+}
+.go-down > div {
+  background: url(./images/arrowbottom.svg);
+  width: 164px;
+  height: 78px;   
+}
+.go-down > img {
+  width: 15px;
+  position: relative;
+  bottom: 60px;
+  cursor: pointer;
 }
 
 
+@media (max-width: 1200px) {
+  .navbar {
+    width: 940px;
+  }
+  .banner {
+    width: 940px;
+  }
+}
+
+@media (max-width: 990px) {
+  .navbar {
+      width: auto;
+      padding: 0px 60px;
+    }
+  .options > button {
+    display: none;
+  }  
+  .banner-img {
+    display: none;
+  }
+  .banner {
+    width: auto;
+    padding: 50px 20px;
+    margin-right: 60px;
+    margin-left: 60px;
+  }
+  .banner-buttons {
+    margin-top: 5px;
+    margin-bottom: 25px;
+  }
+  .banner-text {
+    text-align: center;
+  }
+}
+
 @media (max-width: 768px) {
+  .navbar {
+    width: auto;
+    padding: 0px 8px;
+  }
   .options ul{
     display: none;
   }
-  .options button {
-    display: none;
-  }
-
-  .banner-img {
-    display: none;
-  }
-  .banner-text {
-   width: 90%;
-   margin: auto;
-   text-align: center;
-  }
+  
   .burger-icon {
     display: block;
   }
+  .banner {
+    width: auto;
+    margin-left: 8px;
+    margin-right: 8px;
+  }
 }
 
-@media (max-width: 1200px) and (min-width:769px) {
-  .options li {
-    margin: auto 10px;
+@media (max-width: 587px) {
+  .banner-text > h2 {
+    font-size: 1.1rem;
+    text-align: right;
   }
-  .banner-img {
-    width: 340px;
+  .banner-text p {
+    text-align: justify;
+    font-size: 0.95rem;
+    line-height: 1.9rem;
   }
   .banner-text {
-    width: 300px;
-    margin-top: 80px;
+    padding-right: 13px;
+    padding-left: 13px;
   }
 }
 
